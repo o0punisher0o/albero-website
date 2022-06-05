@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    <title>ALBERO</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__body">
+                <div class="header__logo">
+                    <img src="./images/logo.png">
+                    <div class="header__text">ALBERO</div>
+                    <div class="header__slogan">always on the top.</div>
+                </div>
+                <nav class="navbar">
+                    <a href="#home" class="navbar__button">HOME PAGE</a>
+                    <a href="#about" class="navbar__button">ABOUT US</a>
+                    <a href="#contacts" class="navbar__button">CONTACTS</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="home__container" id="home">
+            <div class="home">
+                <div class="home__text">
+                    THE FIRST RESTAURANT<br/>ON A TREE IN<br/>KAZAKHSTAN
+                </div>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <div class="about__text">
+                ALBERO is the only tree restaurant in Kazakhstan. The restaurant is located in the Katon-Karagai State National Nature Park near the Rakhmanovskiye Kluchi sanatorium. Visiting Albero, you can enjoy both passive and active recreation, appreciate the gorgeous mountain-forest landscape and the futuristic architecture of the building. The menu of ALBERO is dominated by Italian cuisine but also includes multicultural dishes. We are waiting for guests both from all over Kazakhstan and abroad.
+            </div>
+            <div class="about__images">
+                <img class="about__image" src="./images/image1.jpg" />
+                <img class="about__image" src="./images/image2.jpg" />
+            </div>
+        </div>
+        <div class="contacts" id="contacts">
+            <a class="contacts__link margin-right" href="https://instagram.com/albero_kz?utm_medium=copy_link">instagram: albero_kz</a>
+            <button class="contacts__link button" id="phone-number" onclick="copyNumber()">+7 777 808 66 23</button>
+        </div>
+        <script>
+            function copyNumber() {
+                const numberText = document.getElementById('phone-number').innerText;
+                navigator.clipboard.writeText(numberText);
+                alert("Phone number has been copied");
+            }
+        </script>
+    </div>
+</body>
+</html>
